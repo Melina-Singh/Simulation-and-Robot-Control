@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="water_bag" params="parent">
+    <link name="water_bag_link">
+      <visual>
+        <origin xyz="0 0 0.15" rpy="0 1.5708 0"/>
+        <geometry>
+          <cylinder radius="0.06" length="0.25"/>
+        </geometry>
+        <material name="blue"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0.15" rpy="0 1.5708 0"/>
+        <geometry>
+          <cylinder radius="0.06" length="0.25"/>
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="1.0"/>
+        <origin xyz="0 0 0.15"/>
+        <inertia ixx="0.01" ixy="0.0" ixz="0.0"
+                 iyy="0.01" iyz="0.0"
+                 izz="0.01"/>
+      </inertial>
+    </link>
+
+    <joint name="water_bag_joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="water_bag_link"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <gazebo reference="water_bag_link">
+      <material>Gazebo/Blue</material>
+    </gazebo>
+  </xacro:macro>
+
+</robot>

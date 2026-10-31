@@ -1,0 +1,165 @@
+[0.000000] (-) TimerEvent: {}
+[0.000272] (my_bot) JobQueued: {'identifier': 'my_bot', 'dependencies': OrderedDict()}
+[0.000306] (my_bot) JobStarted: {'identifier': 'my_bot'}
+[0.006135] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'cmake'}
+[0.006672] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '/home/dev/dev_ws/src/my_bot', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/dev/dev_ws/install/my_bot'], 'cwd': '/home/dev/dev_ws/build/my_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{4dd1e689-b517-5f39-947d-78e8a8bdf958}'), ('HOME', '/home/dev'), ('OLDPWD', '/home/dev'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/dev/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev'), ('NAME', 'LAPTOP-OKIS38PO'), ('WSL_INTEROP', '/run/WSL/76929_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files/Microsoft MPI/Bin/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/ProgramData/anaconda3/condabin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Program Files/Graphviz/bin/dot.exe:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/MongoDB/Server/7.0/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Pub/Cache/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Trae/bin:/mnt/c/Users/Nitesh Rajbanshi/.local/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/ProgramData/anaconda3/condabin:/mnt/c/Graphviz-11.0.0-win64/bin:/mnt/c/Program Files/MongoDB/Server/7.0/bin:/mnt/d/flutter/bin:/mnt/c/ffmpeg/bin:/mnt/c/Program Files/MySQL/MySQL Server 8.4/bin:/mnt/c/Program Files/JetBrains/PyCharm 2024.3.5/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Roaming/npm:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Ollama:/snap/bin'), ('WT_SESSION', '8d589e5b-5600-43e5-8f51-cde6bc627795'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/dev/dev_ws/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/dev/dev_ws/build/my_bot'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/dev/dev_ws/install/my_bot:/opt/ros/foxy'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.099540] (-) TimerEvent: {}
+[0.199963] (-) TimerEvent: {}
+[0.300292] (-) TimerEvent: {}
+[0.400602] (-) TimerEvent: {}
+[0.500890] (-) TimerEvent: {}
+[0.601359] (-) TimerEvent: {}
+[0.701824] (-) TimerEvent: {}
+[0.802228] (-) TimerEvent: {}
+[0.855856] (my_bot) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.902366] (-) TimerEvent: {}
+[1.003145] (-) TimerEvent: {}
+[1.103697] (-) TimerEvent: {}
+[1.204115] (-) TimerEvent: {}
+[1.304823] (-) TimerEvent: {}
+[1.405187] (-) TimerEvent: {}
+[1.505577] (-) TimerEvent: {}
+[1.605872] (-) TimerEvent: {}
+[1.706243] (-) TimerEvent: {}
+[1.806737] (-) TimerEvent: {}
+[1.907157] (-) TimerEvent: {}
+[2.007858] (-) TimerEvent: {}
+[2.108583] (-) TimerEvent: {}
+[2.208937] (-) TimerEvent: {}
+[2.309350] (-) TimerEvent: {}
+[2.409669] (-) TimerEvent: {}
+[2.482072] (my_bot) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[2.509772] (-) TimerEvent: {}
+[2.610127] (-) TimerEvent: {}
+[2.710660] (-) TimerEvent: {}
+[2.811220] (-) TimerEvent: {}
+[2.911835] (-) TimerEvent: {}
+[3.012373] (-) TimerEvent: {}
+[3.113001] (-) TimerEvent: {}
+[3.213304] (-) TimerEvent: {}
+[3.313774] (-) TimerEvent: {}
+[3.414072] (-) TimerEvent: {}
+[3.433628] (my_bot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[3.514240] (-) TimerEvent: {}
+[3.614884] (-) TimerEvent: {}
+[3.715239] (-) TimerEvent: {}
+[3.815667] (-) TimerEvent: {}
+[3.916114] (-) TimerEvent: {}
+[4.016448] (-) TimerEvent: {}
+[4.116759] (-) TimerEvent: {}
+[4.217068] (-) TimerEvent: {}
+[4.317509] (-) TimerEvent: {}
+[4.418053] (my_bot) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[4.418187] (-) TimerEvent: {}
+[4.418687] (my_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[4.518420] (-) TimerEvent: {}
+[4.618723] (-) TimerEvent: {}
+[4.719249] (-) TimerEvent: {}
+[4.820102] (-) TimerEvent: {}
+[4.920734] (-) TimerEvent: {}
+[5.021274] (-) TimerEvent: {}
+[5.121994] (-) TimerEvent: {}
+[5.222681] (-) TimerEvent: {}
+[5.323274] (-) TimerEvent: {}
+[5.423698] (-) TimerEvent: {}
+[5.524436] (-) TimerEvent: {}
+[5.574745] (my_bot) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.580442] (my_bot) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.580656] (my_bot) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.582001] (my_bot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[5.624525] (-) TimerEvent: {}
+[5.724957] (-) TimerEvent: {}
+[5.825840] (-) TimerEvent: {}
+[5.926819] (-) TimerEvent: {}
+[6.027476] (-) TimerEvent: {}
+[6.128064] (-) TimerEvent: {}
+[6.228610] (-) TimerEvent: {}
+[6.328923] (-) TimerEvent: {}
+[6.429338] (-) TimerEvent: {}
+[6.529952] (-) TimerEvent: {}
+[6.630433] (-) TimerEvent: {}
+[6.730856] (-) TimerEvent: {}
+[6.831342] (-) TimerEvent: {}
+[6.931864] (-) TimerEvent: {}
+[6.937895] (my_bot) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[6.938437] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.032201] (-) TimerEvent: {}
+[7.132854] (-) TimerEvent: {}
+[7.233255] (-) TimerEvent: {}
+[7.333744] (-) TimerEvent: {}
+[7.434516] (-) TimerEvent: {}
+[7.535290] (-) TimerEvent: {}
+[7.636094] (-) TimerEvent: {}
+[7.737070] (-) TimerEvent: {}
+[7.837835] (-) TimerEvent: {}
+[7.938544] (-) TimerEvent: {}
+[8.039258] (-) TimerEvent: {}
+[8.139948] (-) TimerEvent: {}
+[8.154569] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[8.160793] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[8.161152] (my_bot) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[8.162851] (my_bot) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[8.178326] (my_bot) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[8.178463] (my_bot) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[8.240254] (-) TimerEvent: {}
+[8.268866] (my_bot) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[8.283476] (my_bot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[8.325720] (my_bot) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[8.330521] (my_bot) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[8.331241] (my_bot) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.331819] (my_bot) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[8.334332] (my_bot) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.335498] (my_bot) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.336799] (my_bot) StdoutLine: {'line': b'-- Generating done\n'}
+[8.337708] (my_bot) StdoutLine: {'line': b'-- Build files have been written to: /home/dev/dev_ws/build/my_bot\n'}
+[8.341480] (my_bot) CommandEnded: {'returncode': 0}
+[8.341992] (-) TimerEvent: {}
+[8.342107] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'build'}
+[8.342124] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/dev/dev_ws/build/my_bot', '--', '-j24', '-l24'], 'cwd': '/home/dev/dev_ws/build/my_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{4dd1e689-b517-5f39-947d-78e8a8bdf958}'), ('HOME', '/home/dev'), ('OLDPWD', '/home/dev'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/dev/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev'), ('NAME', 'LAPTOP-OKIS38PO'), ('WSL_INTEROP', '/run/WSL/76929_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files/Microsoft MPI/Bin/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/ProgramData/anaconda3/condabin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Program Files/Graphviz/bin/dot.exe:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/MongoDB/Server/7.0/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Pub/Cache/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Trae/bin:/mnt/c/Users/Nitesh Rajbanshi/.local/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/ProgramData/anaconda3/condabin:/mnt/c/Graphviz-11.0.0-win64/bin:/mnt/c/Program Files/MongoDB/Server/7.0/bin:/mnt/d/flutter/bin:/mnt/c/ffmpeg/bin:/mnt/c/Program Files/MySQL/MySQL Server 8.4/bin:/mnt/c/Program Files/JetBrains/PyCharm 2024.3.5/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Roaming/npm:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Ollama:/snap/bin'), ('WT_SESSION', '8d589e5b-5600-43e5-8f51-cde6bc627795'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/dev/dev_ws/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/dev/dev_ws/build/my_bot'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/dev/dev_ws/install/my_bot:/opt/ros/foxy'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[8.367718] (my_bot) CommandEnded: {'returncode': 0}
+[8.369483] (my_bot) JobProgress: {'identifier': 'my_bot', 'progress': 'install'}
+[8.375733] (my_bot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/dev/dev_ws/build/my_bot'], 'cwd': '/home/dev/dev_ws/build/my_bot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'dev'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('WT_PROFILE_ID', '{4dd1e689-b517-5f39-947d-78e8a8bdf958}'), ('HOME', '/home/dev'), ('OLDPWD', '/home/dev'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-20.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/dev/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'dev'), ('NAME', 'LAPTOP-OKIS38PO'), ('WSL_INTEROP', '/run/WSL/76929_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files/Microsoft MPI/Bin/:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/ProgramData/anaconda3/condabin:/mnt/c/Program Files/Graphviz/bin:/mnt/c/Program Files/Graphviz/bin/dot.exe:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/MongoDB/Server/7.0/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Pub/Cache/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Program Files/nodejs/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Trae/bin:/mnt/c/Users/Nitesh Rajbanshi/.local/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Python/Python39/Scripts/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Python/Python39/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/ProgramData/anaconda3/condabin:/mnt/c/Graphviz-11.0.0-win64/bin:/mnt/c/Program Files/MongoDB/Server/7.0/bin:/mnt/d/flutter/bin:/mnt/c/ffmpeg/bin:/mnt/c/Program Files/MySQL/MySQL Server 8.4/bin:/mnt/c/Program Files/JetBrains/PyCharm 2024.3.5/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/cursor/resources/app/bin:/mnt/c/Users/Nitesh Rajbanshi/AppData/Roaming/npm:/mnt/c/Users/Nitesh Rajbanshi/AppData/Local/Programs/Ollama:/snap/bin'), ('WT_SESSION', '8d589e5b-5600-43e5-8f51-cde6bc627795'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/dev/dev_ws/install/my_bot:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/dev/dev_ws/build/my_bot'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/dev/dev_ws/install/my_bot:/opt/ros/foxy'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[8.380883] (my_bot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.380970] (my_bot) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.381128] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/config/diff_drive_controller.yaml\n'}
+[8.381191] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/config/drive_bot.rviz\n'}
+[8.381333] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/config/empty.yaml\n'}
+[8.381371] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/config/my_controllers.yaml\n'}
+[8.381397] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/config/view_bot.rviz\n'}
+[8.381662] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/description/camera.xacro\n'}
+[8.381699] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/description/gazebo_control.xacro\n'}
+[8.381911] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/description/inertial_macros.xacro\n'}
+[8.381980] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/description/nozzle.xacro\n'}
+[8.382009] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/description/robot.gazebo\n'}
+[8.382035] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/description/robot.urdf.xacro\n'}
+[8.382248] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/description/robot.xacro\n'}
+[8.382314] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/description/robot_core.xacro\n'}
+[8.382657] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/description/water_bag.xacro\n'}
+[8.382715] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/launch/bringup.launch.py\n'}
+[8.382743] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/launch/launch_sim.launch.py\n'}
+[8.382767] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/launch/rsp.launch.py\n'}
+[8.382882] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/worlds/college.world\n'}
+[8.382938] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/worlds/empty.world\n'}
+[8.383079] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/worlds/obstacles.world\n'}
+[8.383116] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/worlds/obstacles2.world\n'}
+[8.383299] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/models/MobileNetSSD_deploy.caffemodel\n'}
+[8.383335] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/models/MobileNetSSD_deploy.prototxt\n'}
+[8.383559] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/lib/my_bot/plant_detector_node.py\n'}
+[8.383730] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot\n'}
+[8.383885] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot\n'}
+[8.383997] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.sh\n'}
+[8.384137] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv\n'}
+[8.384256] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/environment/path.sh\n'}
+[8.384361] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/environment/path.dsv\n'}
+[8.384401] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/local_setup.bash\n'}
+[8.384483] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/local_setup.sh\n'}
+[8.384613] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/local_setup.zsh\n'}
+[8.384735] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/local_setup.dsv\n'}
+[8.384849] (my_bot) StdoutLine: {'line': b'-- Symlinking: /home/dev/dev_ws/install/my_bot/share/my_bot/package.dsv\n'}
+[8.390717] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/ament_index/resource_index/packages/my_bot\n'}
+[8.390945] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/cmake/my_botConfig.cmake\n'}
+[8.390990] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake\n'}
+[8.391101] (my_bot) StdoutLine: {'line': b'-- Up-to-date symlink: /home/dev/dev_ws/install/my_bot/share/my_bot/package.xml\n'}
+[8.392658] (my_bot) CommandEnded: {'returncode': 0}
+[8.402040] (my_bot) JobEnded: {'identifier': 'my_bot', 'rc': 0}
+[8.402668] (-) EventReactorShutdown: {}

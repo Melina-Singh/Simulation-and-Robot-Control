@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="nozzle" params="parent">
+    <link name="nozzle_link">
+      <!-- Nozzle Base -->
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.01" length="0.03"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+
+      <!-- Spray Barrel -->
+      <visual>
+        <origin xyz="0.025 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.005" length="0.05"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+
+      <!-- Visual cone of water (decorative only) -->
+      <visual name="spray_cone">
+        <origin xyz="0.075 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cone radius="0.06" length="0.12"/>
+        </geometry>
+        <material name="spray_blue"/>
+      </visual>
+
+      <!-- ✅ Particle Spray -->
+      <gazebo reference="nozzle_link">
+        <material>Gazebo/Black</material>
+        <particleEmitter name="spray_particles">
+          <type>cone</type>
+          <size>0.01 0.01 0.01</size> <!-- origin size -->
+          <rate>800</rate>
+          <duration>0</duration>
+          <lifetime>1</lifetime>
+          <velocity>2.0</velocity>
+          <minVelocity>1.5</minVelocity>
+          <maxVelocity>2.5</maxVelocity>
+          <color>0.4 0.6 1.0 1</color>  <!-- Light blue water -->
+          <emitting>true</emitting>
+          <pose>0.075 0 0 0 0 0</pose> <!-- align with spray_cone -->
+        </particleEmitter>
+      </gazebo>
+    </link>
+
+    <joint name="nozzle_joint" type="fixed">
+      <parent link="${parent}"/>
+      <child link="nozzle_link"/>
+      <origin xyz="0.25 -0.1 0.12" rpy="0 0 0"/>
+    </joint>
+  </xacro:macro>
+
+</robot>

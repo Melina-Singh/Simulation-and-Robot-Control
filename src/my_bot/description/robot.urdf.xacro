@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="differential_drive_robot">
+  <xacro:include filename="$(find my_bot)/description/inertial_macros.xacro"/>
+  <xacro:include filename="$(find my_bot)/description/robot_core.xacro"/>
+  <xacro:include filename="$(find my_bot)/description/gazebo_control.xacro"/>
+  <xacro:include filename="$(find my_bot)/description/camera.xacro" />
+  <!-- <xacro:include filename="$(find my_bot)/urdf/lidar.xacro"/> -->
+  <xacro:include filename="$(find my_bot)/description/water_bag.xacro"/>
+  <xacro:include filename="$(find my_bot)/description/nozzle.xacro"/>
+  <!-- <xacro:include filename="$(find my_bot)/description/lidar.xacro"/> -->
+  <!-- <ros2_control name="MyRobotHardware" type="system"> -->
+  <!-- <hardware>
+    <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+  </hardware> -->
+
+  <!-- Add water bag -->
+  <xacro:water_bag parent="body_link"/>
+  <!-- Add nozzle -->
+  <xacro:nozzle parent="body_link"/>
+</robot>

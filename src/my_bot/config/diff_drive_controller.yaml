@@ -1,0 +1,10 @@
+diff_cont:
+  type: diff_drive_controller/DiffDriveController
+  left_wheel_names: ["wheel2_joint", "wheel4_joint"]
+  right_wheel_names: ["wheel1_joint", "wheel3_joint"]
+  publish_rate: 50.0
+  base_frame_id: body_link
+  cmd_vel_timeout: 0.5
+  use_stamped_vel: false
+  wheel_separation: 0.5  # adjust based on your robot width
+  wheel_radius: 0.075     # adjust to your wheel size
